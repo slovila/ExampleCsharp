@@ -11,5 +11,4 @@ string number = Console.ReadLine();
 string[] arrow = { number };
 
 Console.Write("The last digit of this number: " + arrow[0][number.Length - 1]);
-
-
+//
