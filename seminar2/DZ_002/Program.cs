@@ -2,14 +2,28 @@
 случайное трёхзначное число и удаляет вторую цифру
 этого числа.*/
 
-string[] arrow = {Convert.ToString(new Random().Next(100, 999))};
-Console.WriteLine("Random number is > " + arrow[0]);
-Console.Write("Modify number is: " + arrow[0][0] + arrow[0][2] + "  ");
-/*char firstNumber = (arrow[0][0]); // разделяем полученное число на символы
-char secondNumber = (arrow[0][1]);
-char thirdNumber = (arrow[0][2]);
-int result = Convert.ToInt32(firstNumber + thirdNumber);
-char modifyNumber = Convert.ToChar(result);
 
-//string[] newArrow = {Convert.ToString(arrow[0][0]),Convert.ToString(arrow[0][2])};
-Console.WriteLine(result);*/
+/*string str = Convert.ToString(new Random().Next(100, 999));
+Console.WriteLine(str);
+int[] arr = str.Select(x => x - '0').ToArray();
+Console.WriteLine(arr[0]);
+int a = arr[0];
+int b = arr[2];
+int modifyNumber = a * 10 + b;
+Console.WriteLine(modifyNumber); */
+
+
+
+string[] arrow = { Convert.ToString(new Random().Next(100, 999)) };
+
+Console.WriteLine(arrow);
+Console.WriteLine("Random number is > " + arrow[0]);
+int result = (Convert.ToInt32(arrow[0][0]) - '0') * 10 + (Convert.ToInt32(arrow[0][2]) - '0');
+Console.Write("Modify number is: " + result);
+
+/*int number = (Convert.ToInt32(new Random().Next(100, 999)));
+Console.WriteLine(number);
+int a = number / 10, b = number % 10;
+int c = a / 10, d = a % 10;
+int result = c * 10 + b;
+Console.Write(result);*/
