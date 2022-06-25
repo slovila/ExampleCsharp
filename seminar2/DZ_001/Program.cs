@@ -4,4 +4,4 @@
 
 Console.Write("Введите трехзначное число > ");
 string[] arrow = {Console.ReadLine()};
-Console.Write("Второй элемент этого числа: " + arrow[0][1]);
+Console.Write("Вторая цифра этого числа: " + arrow[0][1]);

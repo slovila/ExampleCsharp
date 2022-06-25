@@ -10,7 +10,7 @@ int namberA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число > ");
 int namberB = Convert.ToInt32(Console.ReadLine());
 
-if(namberA % namberB == 0) Console.WriteLine(namberA + " кратно " + namberB);
+if(namberB % namberA == 0) Console.WriteLine(namberB + " кратно " + namberA);
 
 else 
-Console.WriteLine(namberA + "  не кратно " + namberB + ", так как остаток от деления равен: " + namberA % namberB);
+Console.WriteLine(namberB + "  не кратно " + namberA + ", так как остаток от деления равен: " + namberB % namberA);
