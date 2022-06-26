@@ -1,13 +1,18 @@
 ﻿
 Console.WriteLine("Введите пять чисел > ");
-while(a=5)
-{
-    
-}
+int[] a = new int[5];
+int i = 0;
+double sum = 0.0;
+for (i = 0; i < 5; ++i)
+  {  a[i] = Convert.ToInt32(Console.ReadLine());
+    sum = sum + a[i];
+  }
+Console.WriteLine(sum);
+double arithmeticMean = sum/5.0;
+Console.WriteLine(arithmeticMean);
 
 
-
-//string number = Convert.ToString(new Random().Next(10000, 99999));
+/*string number = Convert.ToString(new Random().Next(10000, 99999));
 string[] arrow = { number };
 Console.WriteLine(arrow[0]);
 var a = arrow[0].Length;
@@ -22,3 +27,4 @@ while (count < a)
 am = sum / a;
 Console.WriteLine(sum);
 Console.WriteLine(am);
+*/
