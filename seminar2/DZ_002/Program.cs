@@ -16,7 +16,7 @@ Console.WriteLine(modifyNumber); */
 
 string[] arrow = { Convert.ToString(new Random().Next(100, 999)) };
 
-Console.WriteLine(arrow);
+//Console.WriteLine(arrow);
 Console.WriteLine("Random number is > " + arrow[0]);
 int result = (Convert.ToInt32(arrow[0][0]) - '0') * 10 + (Convert.ToInt32(arrow[0][2]) - '0');
 Console.Write("Modify number is: " + result);
