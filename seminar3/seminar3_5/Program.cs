@@ -5,7 +5,7 @@ int N = int.Parse(Console.ReadLine());
 
 for (int count = 1; count <= N; count++)
 {
-    System.Console.Write(Math.Pow(count, count) + " ");
+    System.Console.Write(Math.Pow(count, 3) + " ");
 }
 
 
@@ -25,4 +25,22 @@ for (int count = 1; count <= N; count++)
         }
         System.Console.Write(result + " ");
 }
+
+int Pow(int c) function
+{
+    int res = 1;
+    int i = 1;
+    while (i <= c)
+        {
+        res = res * c;
+        i++;
+        }
+    return res;
+}
+
+
+
+
+
+
 */
