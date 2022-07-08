@@ -1,5 +1,5 @@
-﻿/*Задача 1: Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
-[-4, -8, 8, 2] -> [4, 8, -8, -2] */
+﻿/* Задача 1: Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
+[-4, -8, 8, 2] -> [4, 8, -8, -2] 
 
 int[] GenerateArray(int length = 12, int min = -9, int max = 9)
 {
@@ -21,18 +21,21 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-int [] newArray = GenerateArray();
+int[] newArray = GenerateArray();
 PrintArray(newArray);
 
 
-void ChangeZnak(int[]array)
+void ChangeZnak(int[] array)
 {
-for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
 
-{
-    array[i]
+    {
+        array[i] = array[i]*-1;
+        
+    }
+    return array[];
 }
-}
+ 
 
 // Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 //4; массив [6, 7, 19, 345, 3] -> нет
@@ -59,7 +62,7 @@ void PrintArray(int[] array)
 }
 bool Find(int[] array1, int digit)
 {
-    
+
     int count = 0;
     while (count < array1.Length)
     {
@@ -81,7 +84,7 @@ int digit = -3;
 
 
 PrintArray(array);
-if (Find(array,digit))
+if (Find(array, digit))
 {
     Console.WriteLine(" такая цифра есть");
 }
@@ -90,7 +93,7 @@ else
     Console.WriteLine(" такой цифры нет");
 }
 
-/*void PrintArray(int[] array)
+void PrintArray(int[] array)
 {
     System.Console.Write("[" + array[0]);
     for (int i = 1; i < array.Length; i++)
@@ -109,7 +112,7 @@ else
 //[1, 2, 3, 6, 2] -> 0
 //[10, 11, 12, 13, 14] -> 5
 
-int[] GenerateArray(int length = 10, int min = 10, int max = 1001)
+/*int[] GenerateArray(int length = 10, int min = 10, int max = 1001)
 {
     int[] newArray = new int[length];
     Random rnd = new Random();
@@ -140,7 +143,7 @@ for (int i = 0; i < array.Length; i++)
 }
 PrintArray(array);
 Console.WriteLine(qnt);
-
+*/
 
 // Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, 
 //второй и предпоследний и т.д. Результат запишите в новом массиве.
@@ -153,7 +156,7 @@ int[] GenerateArray(int length = 10, int min = 1, int max = 5)
     Random rnd = new Random();
     for (int i = 0; i < newArray.Length; i++)
     {
-        newArray[i] = rnd.Next(min, max + 1); 
+        newArray[i] = rnd.Next(min, max + 1);
     }
     return newArray;
 }
@@ -167,12 +170,12 @@ void PrintArray(int[] array)
     System.Console.WriteLine();
 }
 
-int[]array = GenerateArray();
-int [] Result = new int [array.Length / 2 + array.Length%2];
+int[] array = GenerateArray();
+int[] Result = new int[array.Length / 2 + array.Length % 2];
 PrintArray(array);
-for (int i = 0 ,  j = array.Length-1;  i <= j  ; i++ , j--)
+for (int i = 0, j = array.Length - 1; i <= j; i++, j--)
 {
-   Result[i] =  array[i] * array[j];
+    Result[i] = array[i] * array[j];
 
 }
 PrintArray(Result);
