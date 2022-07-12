@@ -55,7 +55,7 @@ string res = Method4(10, "qwerty");
 System.Console.WriteLine(res);
 
 
-string Method4(int count, string text)
+string Method4(int count, string text)//Таблица умножения
 {
     //int i = 0;
     string result = String.Empty;

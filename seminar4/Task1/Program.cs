@@ -1,7 +1,7 @@
 ﻿//Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
 
 // Вводи числа с приглашением
-int Prompt(string message)
+/*int Prompt(string message)
 {
     System.Console.Write(message);
     return int.Parse(Console.ReadLine());
@@ -31,7 +31,7 @@ System.Console.WriteLine($"Сумма цифр равна {result}");
 89126 -> 5 */
 
 //Ввод числа с приглашением
-int Promt(string message)
+/*int Promt(string message)
 {
     System.Console.WriteLine(message);
     return int.Parse(Console.ReadLine());
@@ -53,7 +53,7 @@ System.Console.WriteLine(count);
 5 -> 120 */
 
 //Ввод числа с приглашением
-int Promt(string message)
+/*int Promt(string message)
 {
     System.Console.WriteLine(message);
     return int.Parse(Console.ReadLine());
@@ -71,8 +71,8 @@ System.Console.WriteLine(mult);
 
 
 
-/* Задача 3: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
-[1,0,1,1,0,1,0,0] */
+//Задача 3: Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+[1,0,1,1,0,1,0,0] 
 int RandomNum(int min, int max)
 {
     int a = new Random().Next(min, max + 1);
@@ -105,19 +105,19 @@ void Print(int[] array)
 int[] array1 = NewArray(8, 0, 1);
 Print(array1);
 
-
+*/
 
 
 
 /* 1 2 3 8 6
 1 * 6 + 2 * 8 + 3 * 3 */
 
-int Promt(string message)
+/*int Prompt(string message)
 {
     System.Console.WriteLine(message);
     return int.Parse(Console.ReadLine());
 }
-int number = Promt("Введите число > ");
+int number = Prompt("Введите число > ");
 
 int NumberSymb(int number)
 {
@@ -151,17 +151,17 @@ while (temp > 0)
 
 
 System.Console.WriteLine(sum);
-
+*/
 
 
 /* Сумма четных цифр числа */
 
-int Promt(string message)
+/*int Prompt(string message)
 {
     System.Console.WriteLine(message);
     return int.Parse(Console.ReadLine());
 }
-int number = Promt("Введите число > ");
+int number = Prompt("Введите число > ");
 
 int sum = 0;
 
@@ -178,13 +178,13 @@ while (temp > 0)
 }
 
 System.Console.WriteLine(sum);
-
+*/
 
 
 
 /* Вводим строку вручную затем убираем пробелы */
 
-string Promt(string msg)
+string? Prompt(string msg)
 {
     System.Console.WriteLine(msg);
     string text = Console.ReadLine();
@@ -203,7 +203,7 @@ string RemoveSpaces(string text)
     }
     return result;
 }
-string newtext = RemoveSpaces(Promt("Введите текст: "));
+string newtext = RemoveSpaces(Prompt("Введите текст: "));
 System.Console.WriteLine(newtext);
 
 bool IfPalindrome(string newtext)
