@@ -1,4 +1,4 @@
-﻿/ Задайте двумерный массив. Напишите программу, 
+﻿// Задайте двумерный массив. Напишите программу, 
 //которая заменяет строки на столбцы. В случае, 
 //если это невозможно, программа должна вывести сообщение 
 //для пользователя.
@@ -9,7 +9,7 @@ int Prompt(string message)
     return int.Parse(Console.ReadLine());
 }
 
-int [,] GenDobMass (int m, int n )
+int [,] GenerateArray (int m, int n )
 {
     int[,] Array  = new int[m,n];
     for( int i =0; i < Array.GetLength(0); i++)
@@ -38,7 +38,7 @@ void PrintArray(int[,] array)
     System.Console.WriteLine();
 }
 
-void CangeArrayLine2(int[,] array)
+void ChangeRowsColumns(int[,] array)
 {
   for( int i = 0 ; i < array.GetLength(0); i++)
   {
@@ -54,8 +54,8 @@ void CangeArrayLine2(int[,] array)
  
 }
 
-int[,]array1 = GenDobMass(3,3);
+int[,]array1 = GenerateArray(3,3);
 PrintArray(array1);
-CangeArrayLine2(array1);
+ChangeRowsColumns(array1);
 Console.WriteLine();
 PrintArray(array1);
