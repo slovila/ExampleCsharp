@@ -48,7 +48,7 @@ void ChangeArrayLine(int[,] array)
 
 }
 
-int[,]array1 = GenDobMass(3,4);
+int[,]array1 = GenerateArray(3,4);
 PrintArray(array1);
 ChangeArrayLine(array1);
 Console.WriteLine();
